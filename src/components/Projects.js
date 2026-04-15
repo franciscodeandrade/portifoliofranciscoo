@@ -10,7 +10,13 @@ function Projects() {
           <h3>{item.title}</h3>
           <p>{item.description}</p>
 
-          <a href="#">Ver projeto</a>
+          {item.link ? (
+            <a href={item.link} target="_blank" rel="noreferrer">
+              Ver projeto
+            </a>
+          ) : (
+            <p>Link em breve</p>
+          )}
 
         </div>
       ))}
