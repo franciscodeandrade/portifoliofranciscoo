@@ -17,10 +17,8 @@ function Projects() {
           ) : (
             <p>Link em breve</p>
           )}
-
         </div>
       ))}
-
     </section>
   );
 }
